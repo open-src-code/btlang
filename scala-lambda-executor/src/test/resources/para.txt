@@ -1,0 +1,5 @@
+This is an example of word count with some repeating words.
+The number of words repeating should be grouped using scala word count lambda function.
+Introduction to Scala Anonymous Function
+A function that does not contain any name or a function without a name is called an anonymous function in scala. This anonymous function is also called a function literal.
+Inside the anonymous function, we can write our logic and define our function. We can create a very lightweight function also if we can create an inline function.

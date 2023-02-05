@@ -28,6 +28,7 @@ dist/
 .settings/
 .classpath
 .project
+.bsp/
 
 # Unit test reports
 TEST*.xml
