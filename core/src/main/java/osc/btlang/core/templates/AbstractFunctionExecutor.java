@@ -1,15 +1,15 @@
 package osc.btlang.core.templates;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
 import osc.btlang.core.FunctionExecutor;
 import osc.btlang.core.exception.FunctionExecutionException;
 import osc.btlang.core.parser.FunctionMeta;
 import osc.btlang.core.util.Constants;
 import osc.btlang.core.util.RegexHelper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Function executor base code
@@ -129,6 +129,12 @@ abstract class AbstractFunctionExecutor implements FunctionExecutor,ParseFunctio
 		return result;
 	}
 
+	/**
+	 * Returns the value from the param map or evaluates functions and returns the value if it is a sub function
+	 * @param val
+	 * @param paramMap
+	 * @return
+	 */
 	protected Object getValue(String val, Map<String, Object> paramMap) {
 		Object ret = val;
 		if (val.startsWith(Constants.CONSTANT)) {
